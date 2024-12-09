@@ -3,13 +3,13 @@ import { Link } from 'react-scroll';
 
 const Hero = () => {
   return (
-    <div name="home" className="w-full h-screen flex items-center justify-center">
+    <div name="contact" className="w-full h-screen bg-[#0a192f] flex items-center justify-center p-4">
       <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center items-center text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-center"
+          className="text-center flex flex-col items-center justify-center"
         >
           <p className="text-[#64ffda]">Bonjour, je m'appelle</p>
           <h1 className="text-4xl sm:text-7xl font-bold text-[#ccd6f6]">
@@ -38,6 +38,30 @@ const Hero = () => {
           </div>
         </motion.div>
       </div>
+      <div className="max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4">
+          <motion.div 
+            className="sm:text-right text-4xl font-bold"
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            viewport={{ once: true }}
+          >
+            <p>Bonjour, je suis ravi de vous rencontrer. N'hésitez pas à explorer mon portfolio.</p>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+            viewport={{ once: true }}
+          >
+            <p>
+              Je suis passionné par la création d'excellentes expériences numériques qui améliorent
+              la vie des personnes qui m'entourent. Je me spécialise dans la création de solutions
+              web pour des clients allant des individus aux petites entreprises.
+              Mon expertise s'étend du design à l'implémentation complète de solutions web modernes.
+            </p>
+          </motion.div>
+        </div>
     </div>
   );
 };

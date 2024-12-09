@@ -54,7 +54,7 @@ const Navbar = () => {
             { name: 'accueil', to: 'home' },
             { name: 'à propos', to: 'about' },
             { name: 'compétences', to: 'skills' },
-            { name: 'projets', to: 'work' },
+            { name: 'mes expériences', to: 'work' },
             { name: 'contact', to: 'contact' }
           ].map((item) => (
             <li key={item.name} className="py-6 text-4xl capitalize">

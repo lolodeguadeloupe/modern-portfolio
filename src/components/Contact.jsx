@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 
 const Contact = () => {
   return (
-    <div name="contact" className="w-full h-screen bg-[#0a192f] flex items-center justify-center">
+    <div name="contact" className="w-full h-screen bg-[#0a192f] flex items-center justify-center p-4">
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center items-center text-center">
         <motion.form 
           method="POST" 
