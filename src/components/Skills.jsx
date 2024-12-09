@@ -35,7 +35,7 @@ const Skills = () => {
   ];
 
   return (
-    <div name="skills" className="w-full h-screen bg-[#0a192f] text-gray-300 flex items-center justify-center">
+    <div name="competences" className="w-full h-screen bg-[#0a192f] text-gray-300 flex items-center justify-center">
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center items-center text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

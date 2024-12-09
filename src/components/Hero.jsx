@@ -3,7 +3,7 @@ import { Link } from 'react-scroll';
 
 const Hero = () => {
   return (
-    <div name="contact" className="w-full h-screen bg-[#0a192f] flex items-center justify-center p-4">
+    <div name="accueil" className="w-full h-screen bg-[#0a192f] flex items-center justify-center p-4">
       <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center items-center text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

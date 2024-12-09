@@ -17,10 +17,10 @@ const Navbar = () => {
         <nav className="hidden md:flex">
           <ul className="hidden md:flex gap-x-8">
             {[
-              { name: 'accueil', to: 'home' },
-              { name: 'à propos', to: 'about' },
-              { name: 'compétences', to: 'skills' },
-              { name: 'projets', to: 'work' },
+              { name: 'accueil', to: 'accueil' },
+              { name: 'à propos', to: 'a-propos' },
+              { name: 'compétences', to: 'competences' },
+              { name: 'mes expériences', to: 'experiences' },
               { name: 'contact', to: 'contact' }
             ].map((item) => (
               <li key={item.name}>
@@ -51,10 +51,10 @@ const Navbar = () => {
           }`}
         >
           {[
-            { name: 'accueil', to: 'home' },
-            { name: 'à propos', to: 'about' },
-            { name: 'compétences', to: 'skills' },
-            { name: 'mes expériences', to: 'work' },
+            { name: 'accueil', to: 'accueil' },
+            { name: 'à propos', to: 'a-propos' },
+            { name: 'compétences', to: 'competences' },
+            { name: 'mes expériences', to: 'experiences' },
             { name: 'contact', to: 'contact' }
           ].map((item) => (
             <li key={item.name} className="py-6 text-4xl capitalize">
