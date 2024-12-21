@@ -54,7 +54,7 @@ const Hero = () => {
             transition={{ duration: 0.5, delay: 0.4 }}
             viewport={{ once: true }}
           >
-            <p>
+            <p className="text-[#8892b0]">
               Je suis passionné par la création d'excellentes expériences numériques qui améliorent
               la vie des personnes qui m'entourent. Je me spécialise dans la création de solutions
               web pour des clients allant des individus aux petites entreprises.
