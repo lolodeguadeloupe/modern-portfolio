@@ -4,45 +4,115 @@ const Work = () => {
   const experiences = [
     {
       id: 1,
-      title: "Consultant informatique",
-      company: "THOMASCOOK",
-      period: "De février 2015 à mai 2016",
-      description: "Chef de projet informatique. Responsable du développement de modules avec le CMS Typo3",
+      title: "Développeur Fullstack",
+      company: "ORANGE",
+      period: "De février 2023 à avril 2023",
+      location: "Blagnac",
+      description: "Transformation d'applications PHP héritées en solutions modernes avec Vue.js et Nuxt.js pour le front-end, et GraphQL avec Laravel pour le back-end. Amélioration significative de l'expérience utilisateur et optimisation des performances."
     },
     {
       id: 2,
-      title: "Expert Typo3",
-      company: "DIRECT ENERGIE",
-      period: "D'avril 2014 à août 2014",
-      description: "Création de mini-sites Direct Energie (parrainage/Blog Blog interne/Lexique/Webv...). Mise en place de gabarits pour les différents sites. Création de styles avec typography. Développement d'extensions spécifiques pour la version Typo3",
+      title: "Développeur Fullstack",
+      company: "TECH VALLEY",
+      period: "D'octobre 2022 à janvier 2023",
+      location: "Toulouse",
+      description: "Débogage et optimisation d'applications web Laravel. Réalisation d'évolutions de code pour améliorer les fonctionnalités et la performance. Maintenance applicative et collaboration étroite avec l'équipe de développement."
     },
     {
       id: 3,
-      title: "Consultant informatique",
-      company: "DASSAULT SYSTEME (Vélizy)",
-      period: "D'avril 2014 à juillet 2014",
-      description: "Projet SDL: développement d'un module de gestion des langues. Utilisation d'une extension (L10nmgr)",
+      title: "Ingénieur d'Études",
+      company: "SNCF",
+      period: "De juillet 2019 à septembre 2022",
+      location: "Saint-Denis",
+      description: "Maintenance d'outils Microsoft Access. Création d'une base PostgreSQL et développement d'une application web avec Laravel pour remplacer les outils existants. Mise en place de la base de données et migration des données. Utilisation des méthodologies Merise, UML et Design patterns."
     },
     {
       id: 4,
-      title: "Expert typo3",
-      company: "KLESIA (Paris)",
-      period: "De février 2013 à juin 2013",
-      description: "Migration d'un intranet typo3 vers Typo3 version 6.0. Correction des bugs existants. Faire évoluer le système pour la nouvelle version de Typo3. Création des nouvelles extensions métiers.",
+      title: "Ingénieur d'Études",
+      company: "ASSU2000",
+      period: "De février 2019 à juin 2019",
+      location: "Noisy-le-sec",
+      description: "Maintenance d'un intranet sous framework PHP propriétaire. Étude de migration vers Laravel ou Symfony 4."
     },
     {
       id: 5,
-      title: "Consultant informatique",
-      company: "CREDIT AGRICOLE",
-      period: "Décembre 2012",
-      description: "Correction d'une application intranet. Correction des bugs existants. Correction d'une application développée en asp. Utilisation de la base de données SQLSERVER. Paramétrage des serveur IIS, et SQLSERVER. Analyse, étude et développement",
+      title: "Ingénieur d'Études",
+      company: "Freelance",
+      period: "De janvier 2017 à janvier 2019",
+      location: "Saint-Mandé",
+      description: "Développement de sites WordPress. Utilisation du plugin WooCommerce pour la plateforme de ventes de billets. Mise en place d'une marketplace pour la vente de repas en ligne. Développement d'un site de crowdfunding."
     },
     {
       id: 6,
-      title: "Expert Typo3",
-      company: "SMILE (Paris)",
-      period: "De juillet 2012 à septembre 2012",
-      description: "Correction d'application développée à l'aide du CMS TYPO3. Analyse, étude et développement d'extensions. Corrections de bug.",
+      title: "Expert TYPO3",
+      company: "Thomascook",
+      period: "De février 2015 à février 2017",
+      location: "Paris",
+      description: "Pilotage de projets de développement avancés sous TYPO3, garantissant des solutions performantes et innovantes."
+    },
+    {
+      id: 7,
+      title: "Ingénieur d'Études",
+      company: "Dassault Systèmes",
+      period: "D'avril 2014 à décembre 2014",
+      location: "Velizy-Villacoublay",
+      description: "Développement d'une application gérant la traduction."
+    },
+    {
+      id: 8,
+      title: "Expert TYPO3",
+      company: "Direct Energie",
+      period: "De juin 2014 à novembre 2014",
+      location: "Paris",
+      description: "Gestion de l'ensemble des sites annexes, blogs, mini sites, Lexique."
+    },
+    {
+      id: 9,
+      title: "Expert TYPO3",
+      company: "Klesia",
+      period: "De février 2013 à avril 2014",
+      location: "Paris",
+      description: "Migration d'un intranet TYPO3 version 4.5 vers la version 6.0. Correction de bugs existants. Evolution du site."
+    },
+    {
+      id: 10,
+      title: "Développement ASP",
+      company: "Crédit-Agricole",
+      period: "Décembre 2012",
+      location: "Beauvais",
+      description: "Correction d'un site intranet développé en ASP. Mise en place du serveur IIS et la base SQL server."
+    },
+    {
+      id: 11,
+      title: "Expert TYPO3",
+      company: "Smile",
+      period: "De juillet 2012 à décembre 2012",
+      location: "Asnières sur Seine",
+      description: "Corrections d'extensions développées avec TYPO3 et correction de bugs."
+    },
+    {
+      id: 12,
+      title: "Expert TYPO3",
+      company: "Banque de France",
+      period: "De septembre 2011 à juin 2012",
+      location: "Asnières sur Seine",
+      description: "Maintenance du site institutionnel et formation des utilisateurs pour le framework TYPO3."
+    },
+    {
+      id: 13,
+      title: "Expert TYPO3",
+      company: "Peugeot PSA",
+      period: "De septembre 2010 à avril 2011",
+      location: "Asnières sur Seine",
+      description: "Développement d'un intranet international gestion de plusieurs langues. Développement de plugins spécifiques."
+    },
+    {
+      id: 14,
+      title: "Expert TYPO3",
+      company: "Freelance",
+      period: "De janvier 2009 à décembre 2009",
+      location: "",
+      description: "Développement de sites pour la mairie de Sainte-Rose. Projets : Canbt.org, sainte-roseenfete.com, etudesetformations.com"
     }
   ];
 
