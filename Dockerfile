@@ -1,21 +1,26 @@
-FROM node:18 AS build
+# Dockerfile pour la production
+
+# Development Stage
+FROM node:18-alpine AS development
 WORKDIR /app
-
-# Copiez tout le projet
+COPY package*.json ./
+RUN npm ci
 COPY . .
+EXPOSE 3000
+CMD ["npm", "run", "dev"]
 
-# Installez les dépendances
-RUN npm install
-
-# Lancez le build
+# Build Stage
+FROM node:18-alpine AS builder
+WORKDIR /app
+COPY package*.json ./
+RUN npm ci --only=production
+COPY . .
 RUN npm run build
 
-# Production
-FROM nginx:alpine
-COPY --from=build /app/dist /usr/share/nginx/html
-
-# Ajoutez la configuration nginx
+# Production Stage
+FROM nginx:alpine AS production
+RUN chmod 644 /etc/nginx/conf.d/default.conf
 COPY nginx.conf /etc/nginx/conf.d/default.conf
-
-# Copiez les certificats SSL
-COPY certs /etc/nginx/certs
+COPY --from=builder /app/dist /usr/share/nginx/html
+EXPOSE 80 443
+CMD ["nginx", "-g", "daemon off;"]
